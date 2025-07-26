@@ -1,0 +1,68 @@
+## Delayed period data.
+## Berdasarkan scatter plot dari efek delayed period, dapat dilihat bahwa delayed period selama 4 bulan merupakan
+## variabel dengan hubungan yang cukup kuat dengan kunjungan dokter.
+library (dplyr)
+data_delayed_effect = data.frame(
+bulan = ___,
+tahun = ___,
+kunjungan_dokter = ___,
+penjualan_sereal = ___,
+penjualan_sereal_1 = ___(datagabungan$penjualan_sereal),
+penjualan_sereal_2 = ___(datagabungan$penjualan_sereal,___),
+penjualan_sereal_3 = ___(datagabungan$penjualan_sereal,___),
+penjualan_sereal_4 = ___(datagabungan$penjualan_sereal,___),
+penjualan_sereal_5 = ___(datagabungan$penjualan_sereal,___),
+penjualan_sereal_6 = ___(datagabungan$penjualan_sereal,___)
+)
+head(data_delayed_effect)
+
+
+plot(___, ___,
+pch = 19,
+xlab = "Kunjungan dokter",
+ylab = "Penjualan sereal",
+main = "Kunjungan dokter dengan penjualan sereal (delay 1 bulan)",
+col = "blue")
+plot(___, ___,
+pch = 19,
+xlab = "Kunjungan dokter",
+ylab = "Penjualan sereal",
+main = "Kunjungan dokter dengan penjualan sereal (delay 2 bulan)",
+col = "blue")
+plot(___, ___,
+pch = 19,
+xlab = "Kunjungan dokter",
+ylab = "Penjualan sereal",
+main = "Kunjungan dokter dengan penjualan sereal (delay 3 bulan)",
+col = "blue")
+plot(___, ___,
+pch = 19,
+xlab = "Kunjungan dokter",
+ylab = "Penjualan sereal",
+main = "Kunjungan dokter dengan penjualan sereal (delay 4 bulan)",
+col = "blue")
+plot(___, ___,
+pch = 19,
+xlab = "Kunjungan dokter",
+ylab = "Penjualan sereal",
+main = "Kunjungan dokter dengan penjualan sereal (delay 5 bulan)",
+col = "blue")
+plot(___, ___,
+pch = 19,
+xlab = "Kunjungan dokter",
+ylab = "Penjualan sereal",
+main = "Kunjungan dokter dengan penjualan sereal (delay 6 bulan)",
+col = "blue")
+
+data_delayed_effect$kunjungan_dokter, data_delayed_effect$penjualan_sereal_n
+
+# Model regresi menggunakan R
+model = ___(___ ~ ___, data = ___)
+summary(model)
+
+data_prediksi = data.frame(
+     month = c(1,2,3,4,5),
+     year = c(1998,1998,1998,1998,1998),
+     penjualan_permen = c(345646, 454344, 346987, 209854, 254634)
+     )
+predict(model, data_prediksi)
